@@ -11,16 +11,20 @@ import org.json.JSONObject;
 public class repoUser {
 
 	public static void main(String[] args) {
+		
+		String[] repos = new String[] { "echarts", "superset", "dubbo", "spark", "airflow" };
+		String repo, username, company, location;
+		int contributions;
+		
 		try {
-			String file = "C:/Users/PARTNERA-Z14N/Desktop/file.txt";
-			BufferedWriter writer = new BufferedWriter(new FileWriter(file, true));
-			String[] repos = new String[] { "echarts", "superset", "dubbo", "spark", "airflow" };
-			for (int j = 0; j < repos.length; j++) {
+			BufferedWriter writer = new BufferedWriter(new FileWriter("users.txt", true));
+			
+			
+			for (int i = 0; i <repos.length; i++) {
 
-				String url = String.format("https://api.github.com/repos/apache/%s/contributors", repos[j]);
+				String url = String.format("https://api.github.com/repos/apache/%s/contributors", repos[i]);
 				URL obj = new URL(url);
 				HttpURLConnection con = (HttpURLConnection) obj.openConnection();
-				// optional default is GET
 				con.setRequestMethod("GET");
 				BufferedReader in = new BufferedReader(new InputStreamReader(con.getInputStream()));
 				String inputLine;
@@ -32,25 +36,27 @@ public class repoUser {
 
 				String result = "";
 				result = response.toString();
-
-				JSONArray itemArray = new JSONArray(result);
-				for (int i = 0; i < 5; i++) {
-					System.out.println(i + 1);
-					JSONObject e = itemArray.getJSONObject(i);
-					String repo = repos[j];
-					String username = e.getString("login");
-					int contributions = e.getInt("contributions");
-					JSONObject user = getUserInfo(e.getString("login"));
-					String company = user.isNull("company") ? null : user.optString("company");
-					String location = user.isNull("company") ? null : user.optString("location");
+				JSONArray jsonArray = new JSONArray(result); // Store the string in JSON array as objects 
+				
+				for (int j = 0; j < 10; j++) {
+					System.out.println(i+1+"."+(j+1));
+					JSONObject contributor= jsonArray.getJSONObject(j); // Get the object of each contributor
+					repo = repos[i];
+					username = contributor.getString("login");
+					contributions = contributor.getInt("contributions");
+					JSONObject user = getUserInfo(contributor.getString("login")); 	         // Get user object with username
+					company = user.isNull("company") ? null : user.optString("company");    // Check for null values
+					location = user.isNull("location") ? null : user.optString("location");
 					writer.write("repo: " + repo + ", username: " + username + ", contributions: " + contributions
 							+ ", company: " + company + ", location: " + location);
 					writer.newLine();
 
 				}
+				
 			}
-
+			
 			writer.close();
+			System.out.println("Users written to users.txt file");
 		} catch (Exception e) {
 			e.printStackTrace();
 		}
@@ -59,10 +65,9 @@ public class repoUser {
 
 	public static JSONObject getUserInfo(String username) throws Exception {
 
-		String test = String.format("https://api.github.com/users/%s", username);
-		URL obj = new URL(test);
+		String url = String.format("https://api.github.com/users/%s", username);
+		URL obj = new URL(url);
 		HttpURLConnection con = (HttpURLConnection) obj.openConnection();
-		// optional default is GET
 		con.setRequestMethod("GET");
 		BufferedReader in = new BufferedReader(new InputStreamReader(con.getInputStream()));
 		String inputLine;
@@ -74,12 +79,10 @@ public class repoUser {
 		String result = "";
 		result = response.toString();
 
-		JSONObject user = new JSONObject(result);
+		JSONObject user = new JSONObject(result); // create JSONObject for user informations
 
 		return user;
 
 	}
-
-	
 
 }

@@ -1,0 +1,50 @@
+repo: echarts, username: pissang, contributions: 2571, company: Baidu, Inc., location: Shanghai, China
+repo: echarts, username: 100pah, contributions: 2239, company: null, location: null
+repo: echarts, username: kener, contributions: 1137, company: Alipay, location: china
+repo: echarts, username: Ovilia, contributions: 544, company: null, location: Shanghai, China
+repo: echarts, username: deqingli, contributions: 234, company: null, location: null
+repo: echarts, username: plainheart, contributions: 170, company: null, location: Zhengzhou, China
+repo: echarts, username: susiwen8, contributions: 154, company: null, location: Beijing
+repo: echarts, username: loutongbing, contributions: 44, company: null, location: null
+repo: echarts, username: yufeng04, contributions: 41, company: bupt, location: shanghai
+repo: echarts, username: erik168, contributions: 31, company: null, location: Beijing
+repo: superset, username: mistercrunch, contributions: 2063, company: preset-io, location: San Mateo, CA
+repo: superset, username: john-bodley, contributions: 304, company: null, location: null
+repo: superset, username: betodealmeida, contributions: 285, company: @preset-io, location: Bodega Bay, CA
+repo: superset, username: villebro, contributions: 282, company: Preset, location: Helsinki, Finland
+repo: superset, username: dpgaspar, contributions: 255, company: null, location: Lisbon, Portugal
+repo: superset, username: graceguo-supercat, contributions: 253, company: Airbnb, location: null
+repo: superset, username: ktmud, contributions: 173, company: Airbnb, location: San Francisco
+repo: superset, username: etr2460, contributions: 161, company: Airbnb, location: null
+repo: superset, username: kristw, contributions: 148, company: @airbnb , location: San Francisco, CA
+repo: superset, username: bkyryliuk, contributions: 141, company: Dropbox, location: San Francisco
+repo: dubbo, username: chickenlj, contributions: 890, company: Alibaba, location: Hangzhou, China
+repo: dubbo, username: beiwei30, contributions: 271, company: @alibaba , location: HangZhou, China
+repo: dubbo, username: cvictory, contributions: 158, company: null, location: null
+repo: dubbo, username: liangfei0201, contributions: 131, company: Alibaba, location: Hangzhou, China
+repo: dubbo, username: mercyblitz, contributions: 115, company: Alibaba, location: Hangzhou, China
+repo: dubbo, username: oldratlee, contributions: 106, company: @taobao tmall @aliyun @alibaba, location: Hangzhou, Zhejiang, China
+repo: dubbo, username: ralf0131, contributions: 98, company: Alibaba, location: Hangzhou, China
+repo: dubbo, username: htynkn, contributions: 46, company: @apache, location: ChengDu
+repo: dubbo, username: tswstarplanet, contributions: 44, company: @apache, location: Beijing, China
+repo: dubbo, username: CrazyHZM, contributions: 43, company: null, location: Hangzhou China
+repo: spark, username: mateiz, contributions: 1588, company: Databricks Inc., location: San Francisco, CA
+repo: spark, username: rxin, contributions: 1476, company: Databricks, location: San Francisco
+repo: spark, username: cloud-fan, contributions: 903, company: Databricks, location: Hangzhou, China
+repo: spark, username: pwendell, contributions: 857, company: null, location: null
+repo: spark, username: HyukjinKwon, contributions: 819, company: @Apache @Databricks, location: South Korea
+repo: spark, username: dongjoon-hyun, contributions: 774, company: @apple @apache , location: San Francisco Bay Area
+repo: spark, username: viirya, contributions: 586, company: @apple @apache , location: Seattle
+repo: spark, username: srowen, contributions: 581, company: @databricks , location: Austin, TX
+repo: spark, username: tdas, contributions: 568, company: Databricks.com, location: San Francisco
+repo: spark, username: MaxGekk, contributions: 566, company: null, location: Moscow, Russia
+repo: airflow, username: mistercrunch, contributions: 1702, company: preset-io, location: San Mateo, CA
+repo: airflow, username: kaxil, contributions: 1084, company: @astronomer , location: United Kingdom
+repo: airflow, username: potiuk, contributions: 999, company: Apache Software Foundation, location: Warsaw
+repo: airflow, username: mik-laj, contributions: 734, company: @Snowflake, location: Warsaw
+repo: airflow, username: bolkedebruin, contributions: 507, company: null, location: null
+repo: airflow, username: ashb, contributions: 412, company: Astronomer.io, location: London
+repo: airflow, username: turbaszek, contributions: 319, company: @Snowflakedb, location: Warsaw
+repo: airflow, username: jlowin, contributions: 315, company: @PrefectHQ , location: Washington, DC
+repo: airflow, username: r39132, contributions: 216, company: null, location: Santa Clara, CA
+repo: airflow, username: XD-DENG, contributions: 169, company: null, location: CN->SG->CH->?
